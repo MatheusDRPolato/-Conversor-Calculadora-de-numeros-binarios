@@ -1,15 +1,15 @@
 #Conversor/Calculadora de numeros binarios
 
 #INCIO
-print("==========Conversor/Calculadora de Binarios==========")
-print("Digite 1 para Converter")
-print("Digite 2 para Calcular Binarios")
+print("==========Conversor/Calculadoras==========")
+print("Digite 1 se deseja converter")
+print("Digite 2 se deseja calcular")
 b = int(input("Digito:"))
 
 #VARIAVEL DE DECIMAL
 if b == 1:
     print("==========Conversor==========")
-    print("Inicie com numero decimal")
+    print("Entre com o numero em decimal")
     a = int(input("Seu numero:"))
 
 #VARIAVEL DE DIGITO
@@ -35,7 +35,7 @@ if b == 1:
 #VARIAVEL DO NUMERO 1,2 EM DECIMAL
 if b == 2:
     print("==========Calculadora de Binarios==========")
-    print("Inicie o numero em decimal!!")
+    print("Entre com o numero em decimal!!")
     n1 = int(input("Digite o seu primeiro numero:"))
     n2 = int(input("Digite o seu segundo numero:"))
 
@@ -46,6 +46,7 @@ if b == 2:
     x = int(input("Digito:"))
 
 #VARIAVEL PARA DIGITO , ESCOLHER SE DESEJA SOMAR,SUBTRAIR,DIVIDIR,MULTIPLICAR
+    print("Agora , escolha a sua operação=")
     print("Digite 1 para Somar")
     print("Digite 2 para Subtrair")
     print("Digite 3 para Dividir")
@@ -53,6 +54,8 @@ if b == 2:
     o = int(input("Digito:"))
 
 #VARIAVEL DE CONTAS /BIN-BINARIO/HEX-HEXADECIMAL/OCT-OCTAL/ VOCE INTRODUZ O NUMERO EM DECIMAL E O PROPRIO PYTHON CONVERTE PARA A BASE DESEJADA
+    if x == 0 and x >= 5 and o == 0 and o >= 5:
+        print("Erro, tente novamente!") 
     if x == 1 and o == 1:
         c = bin(n1 + n2).replace("0b", "")
         print(c)
@@ -90,7 +93,5 @@ if b == 2:
         print(n)
     if x == 3 and o == 4:
         n = oct(n1 * n2).replace("0x", "")
-        print(n)
-    else:
-        print("Erro, tente novamente!")     
+        print(n)    
 #Codigo feito no dia 14/05/2022 , pelo estudante de Ciencias da Computação - 1ºSemestre - UNICSUL ©Matheus Dos Reis Polato 
